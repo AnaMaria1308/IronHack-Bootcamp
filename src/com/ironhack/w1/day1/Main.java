@@ -26,16 +26,63 @@ public class Main {
         System.out.println("myString: " + myString);
 
         myInt = 1234;
+        System.out.println("myInt: " + myInt);
+        myInt = myInt + 1000;
+        System.out.println("myInt: " + myInt);
+        myInt += 1000;
+        System.out.println("myInt: " + myInt);
 
+        myByte += 10;
+        System.out.println("myBite: " + myByte);
 
+//        OPERATORS
+
+        int number = 10;
+        myDouble = 10;
+
+        System.out.println(number + 5);
+        System.out.println(number - 5);
+        System.out.println(number * 5);
+        System.out.println(number / 3);
+        System.out.println(number % 3);
+        System.out.println(myDouble / 3);
+        System.out.println(1.2 - 1.1);
+        System.out.println(number);
+        System.out.println(number++);
+        System.out.println(number);
+        System.out.println(++number);
+
+        number *= 10;
+        System.out.println(number);
 
         //Conditionals
 
-        int number = 101;
+        number = 101;
 
         if (number >= 1000) {
             System.out.println("Number es mayor o igual que 1000");
+        } else if (number > 0 && number < 1000) {
+            System.out.println("Number es mayor que 0 y menor que 1000");
+        } else if (number > 100) {
+            System.out.println("es mayor que 100. Pero esta condición es inalcanzable porque entrará en otra.");
+        } else if (number == 0) {
+            System.out.println("number es igual a 0");
+        } else {
+            System.out.println("Number es menor que 1000");
         }
+
+        if (number > 10 || number < -10) {
+            System.out.println("Number tiene más de 2 cifras");
+        }
+
+        if (number % 2 == 0) System.out.println("Number es par");
+        else System.out.println("Number es impar");
+
+        if (number != 0) System.out.println("Number es distinto de 0");
+
+        isBoolean = true;
+        if (isBoolean) System.out.println("is boolean es true");
+
 
         int day = 4;
         switch (day) {
@@ -64,6 +111,10 @@ public class Main {
 
         System.out.println(hasPassed);
 
+        myMethod();
+        myMethod();
+        myMethod();
+        myMethod();
         myMethod();
 
         System.out.println(getInfo(4));
