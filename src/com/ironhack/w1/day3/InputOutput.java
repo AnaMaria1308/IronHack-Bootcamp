@@ -24,10 +24,17 @@ public class InputOutput {
         } while (name.length() < 3);
 
         System.out.println("Your name is: " + name);
-
-        System.out.println("Please write your age");
-        int age = scanner.nextInt();
-        System.out.println("Your age is: " + age);
+//        System.out.println("Please write your age");
+//        if (scanner.nextLine().length() > 0) {
+//            do {
+//                System.out.println("Esto no es lo que esperaba");
+//                System.out.println("Please write your age");
+//                scanner.nextLine();
+//            } while (scanner.nextLine().length() > 0);
+//        } else {
+//            int age = Integer.parseInt(scanner.nextLine());
+//            System.out.println("Your age is: " + age);
+//        }
 
         scanner.close();
 
@@ -57,5 +64,6 @@ public class InputOutput {
             System.out.println(str);
         }
         fileScanner.close();
+
     }
 }
